@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.home {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* ===================== HERO SECTION ===================== */
+.hero {
+  background: linear-gradient(135deg, #145080 0%, #169DAF 100%);
+  color: white;
+  padding: 5rem 0 0 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0rem 0 6rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.hero__logo {
+  width: 270px;
+  height: 270px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  animation: fadeInDown 0.6s ease-out;
+  margin-top: -40px;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  letter-spacing: -0.5px;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.hero__description {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 700px;
+  opacity: 0.95;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+/* CTA Buttons */
+.hero__cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+  position: relative;
+  z-index: 20;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  background-color: transparent;
+  color: white;
+}
+
+.cta-btn__icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn--primary,
+.cta-btn--secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.cta-btn--primary:hover,
+.cta-btn--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn--primary:hover .cta-btn__icon,
+.cta-btn--secondary:hover .cta-btn__icon {
+  transform: translateY(-2px);
+}
+
+/* Wave SVG */
+.hero__wave {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+
+.hero__wave path {
+  fill: #f0f2f5;
+  filter: drop-shadow(0 1px 0 #f0f2f5);
+}
+
+/* ===================== STATISTICS SECTION ===================== */
+.stats {
+  background-color: #f0f2f5;
+  padding: 4rem 0;
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stats__card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stats__card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.stats__number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #145080;
+  margin-bottom: 0.5rem;
+}
+
+.stats__label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+}
+
+/* ===================== SERVICES SECTION ===================== */
+.services {
+  background-color: #f0f2f5;
+  padding: 0.5rem 0 3rem;
+}
+
+.services__header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.services__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+}
+
+.services__subtitle {
+  font-size: 1.05rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1rem;
+}
+
+.service__card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service__card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+}
+
+.service__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service__card:hover .service__icon {
+  transform: scale(1.15);
+}
+
+.service__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+}
+
+.service__description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.service__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0066CC;
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 0;
+  justify-content: center;
+}
+
+.service__link:hover {
+  color: #145080;
+  gap: 0.75rem;
+}
+
+/* ===================== CONTENT SECTION CENTERED BUT LEFT TEXT ===================== */
+.content {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #145080 0%, #169DAF 100%);
+  color: white;
+  text-align: left;
+}
+
+.content__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  opacity: 0.85;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; /* supaya tetap center di halaman */
+}
+
+.content__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto 1.8rem auto; 
+  opacity: 0.85;
+  text-align: justify;
+}
+
+/* ===================== TESTIMONIALS ===================== */
+.testimonials {
+  padding: 3rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.testimonials__subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.8;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
+}
+
+/* Carousel cards */
+.testimonial__carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial__card {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.testimonial__card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.testimonial__card.active {
+  display: flex;
+}
+
+.testimonial__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.testimonial__name {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial__school {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Dots */
+.testimonial__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.testimonial__dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #B0B0B0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimonial__dots .dot.active {
+  background-color: #666666;
+}
+
+/* ===================== JOIN KKG SECTION ===================== */
+.join-kkg {
+  padding: 2rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.join-kkg__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    max-width: 900px;     
+  margin: 0 auto;         
+  background: linear-gradient(135deg, #145080 0%, #169DAF 100%);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25); /* floating effect */
+}
+
+.join-kkg__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-kkg__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.kkg-logos {
+  padding: 3rem 2rem;
+  background: #f0f2f5; /* bisa disesuaikan, atau transparan jika mau */
+}
+
+.kkg-logos__container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 2rem;              
+  flex-wrap: wrap;          
+}
+
+.kkg-logo {
+  width: 180px;    
+  height: 180px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.kkg-logo:hover {
+  transform: scale(1.05); /* efek hover ringan */
+}
+
+.home-footer {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+/* ===================== ANIMATIONS ===================== */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== TABLET RESPONSIVE ===================== */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem 0 0 0;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+  }
+
+  .hero__cta {
+    gap: 1rem;
+  }
+
+  .hero__wave {
+    height: 100px;
+  }
+
+  .stats {
+    padding: 3rem 0;
+  }
+
+  .stats__grid {
+    gap: 1.5rem;
+  }
+
+  .stats__card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .stats__number {
+    font-size: 2rem;
+  }
+
+  .services {
+    padding: 3rem 0;
+  }
+
+  .services__title {
+    font-size: 2rem;
+  }
+
+  .services__grid {
+    gap: 1.5rem;
+  }
+
+  .service__card {
+    padding: 2rem 1.5rem;
+  }
+
+  .service__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* ===================== MOBILE RESPONSIVE - MEDIUM ===================== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0 0 0;
+  }
+
+  .hero__logo {
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+  }
+
+  .hero__content {
+    padding: 1.5rem 0 4rem 0;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .hero__cta {
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .cta-btn {
+    padding: 0.85rem 1.75rem;
+    font-size: 0.95rem;
+  }
+
+  .cta-btn__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero__wave {
+    height: 100px;
+  }
+
+  .stats {
+    padding: 2.5rem 0;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .stats__card {
+    padding: 1.25rem 1rem;
+  }
+
+  .stats__number {
+    font-size: 1.75rem;
+  }
+
+  .stats__label {
+    font-size: 0.9rem;
+  }
+
+  .services {
+    padding: 2.5rem 0;
+  }
+
+  .services__title {
+    font-size: 1.75rem;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .service__card {
+    padding: 1.5rem;
+  }
+
+  .service__icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 1rem;
+  }
+
+  .service__title {
+    font-size: 1.1rem;
+  }
+
+  .service__description {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 3rem 2rem;
+  }
+
+  .content h2 {
+    font-size: 1.75rem;
+  }
+  .testimonials__title {
+  font-size: 1.6rem;
+  }
+  .join-kkg__title {
+  font-size: 1.6rem;
+}
+  .kkg-logo {
+    width: 90px;
+    height: 90px;
+  }
+  
+}
+
+/* ===================== MOBILE RESPONSIVE - SMALL ===================== */
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 0 0 0;
+  }
+
+  .hero__logo {
+    width: 100px;
+    height: 100px;
+    margin-top: -15px;
+  }
+
+  .hero__content {
+    padding: 1rem 0 3rem 0;
+    gap: 0.3rem;
+  }
+
+  .hero__title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .hero__description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .hero__cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .cta-btn__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero__wave {
+    height: 80px;
+  }
+
+  .stats {
+    padding: 2rem 0;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stats__card {
+    padding: 1rem 0.75rem;
+  }
+
+  .stats__number {
+    font-size: 1.5rem;
+  }
+
+  .stats__label {
+    font-size: 0.85rem;
+  }
+
+  .services {
+    padding: 2rem 0;
+  }
+
+  .services__title {
+    font-size: 1.5rem;
+  }
+
+  .services__subtitle {
+    font-size: 0.95rem;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service__card {
+    padding: 1.25rem;
+  }
+
+  .service__icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 1rem;
+  }
+
+  .service__title {
+    font-size: 1rem;
+  }
+
+  .service__description {
+    font-size: 0.85rem;
+  }
+
+  .service__link {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.4rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+   .kkg-logo {
+    width: 80px;
+    height: 80px;
+  }
+}

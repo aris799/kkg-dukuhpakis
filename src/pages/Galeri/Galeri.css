@@ -1,0 +1,106 @@
+/* ================= Galeri Page ================= */
+.galeri-page {
+  padding: 2rem 1rem;
+  min-height: 80vh;
+  background-color: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.galeri-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ================= Top Title Section ================= */
+.galeri-top {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.galeri-label {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  background-color: #008056;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.galeri-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.galeri-title span {
+  color: #0071d8;
+}
+
+.galeri-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= Galeri Content ================= */
+.galeri-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 1rem;
+}
+
+.galeri-empty {
+  text-align: center;
+  color: #8391a2;
+}
+
+.galeri-empty h2 {
+  margin: 0.5rem 0;
+}
+
+.galeri-empty p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ================= Footer ================= */
+.footer {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .galeri-top .galeri-title {
+    font-size: 2rem;
+  }
+
+  .galeri-top .galeri-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeri-top .galeri-title {
+    font-size: 1.6rem;
+  }
+
+  .galeri-top .galeri-subtitle {
+    font-size: 0.9rem;
+  }
+}

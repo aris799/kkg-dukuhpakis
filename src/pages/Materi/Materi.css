@@ -1,0 +1,204 @@
+/* ================= Materi Page ================= */
+.materi-page {
+  padding: 2rem 1rem;
+  min-height: 80vh;
+  background-color: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.materi-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ================= Top Title Section ================= */
+.materi-top {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.materi-label {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  background-color: #008056;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.materi-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.materi-title span {
+  color: #0071d8;
+}
+
+.materi-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= Filter + Count Header ================= */
+.materi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+/* ================= Filter Box ================= */
+.materi-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 0.35rem 0.5rem;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  min-width: 220px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.materi-filter:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.materi-filter:hover .materi-filter-icon,
+.materi-filter:hover .materi-arrow-icon,
+.materi-filter:hover .materi-selected {
+  color: #fff;
+}
+
+.materi-filter-icon {
+  font-size: 1.2rem;
+}
+
+.materi-selected {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.materi-arrow-icon {
+  font-size: 1.2rem;
+}
+
+/* ================= Dropdown Options ================= */
+.materi-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-top: 2px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.materi-option {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.materi-option:hover {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+/* ================= Count ================= */
+.materi-count {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ================= Materi Content ================= */
+.materi-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 1rem;
+}
+
+.materi-empty {
+  text-align: center;
+  color: #8391a2;
+}
+
+.materi-empty h2 {
+  margin: 0.5rem 0;
+}
+
+.materi-empty p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ================= Footer ================= */
+.footer {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .materi-top .materi-title {
+    font-size: 2rem;
+  }
+
+  .materi-top .materi-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .materi-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .materi-filter {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .materi-top .materi-title {
+    font-size: 1.6rem;
+  }
+
+  .materi-top .materi-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .materi-filter {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,285 @@
+/* ====================== PROFIL PAGE ====================== */
+.profil-page {
+  min-height: 80vh;
+  background-color: #f7f9fb;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Top Gradient Section Full Width */
+.profil-top-gradient {
+  width: 100%;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1450B0 0%, #169DAF 100%);
+  color: #fff;
+}
+
+/* Icon Wrapper di gradient section */
+.profil-icon-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profil-icon-wrapper .profil-icon {
+  color: #fff;
+}
+
+/* Title */
+.profil-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0.5rem 0;
+}
+
+/* Subtitle */
+.profil-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 1rem auto 0 auto;
+  color: #e6f1f5;
+}
+
+/* Peresmian Image */
+.profil-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.profil-image {
+  width: 380px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  display: block;
+}
+
+/* Visi & Misi Section */
+.profil-visimisi {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  padding: 0 1rem; /* padding horizontal agar responsif */
+}
+
+.visimisi-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #000; /* Header hitam */
+}
+
+.visimisi-subtitle {
+  font-size: 1rem;
+  color: #5a6a7a;
+  margin-bottom: 2rem;
+}
+
+.visimisi-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Visi & Misi Cards */
+.visimisi-card {
+  background-color: #fff; /* tetap putih */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: left;
+  width: 48%;
+}
+
+/* Gradient Header Box */
+.visimisi-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(135deg, #1450B0 0%, #169DAF 100%);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.visimisi-icon {
+  background-color: #eef5fb;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: #1450B0;
+}
+
+.visimisi-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Paragraph & Misi List */
+/* Kelas baru khusus untuk isi Visi */
+.visi-text {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 1rem 1rem 3rem 1rem; 
+  text-align: justify;
+}
+
+/* Misi tetap menggunakan misi-list */
+.misi-list {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.misi-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.92rem;
+}
+
+.misi-number {
+  background-color: #d0f0dc;
+  color: #00a27a;
+  font-weight: 600;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+/* Hubungi Kami Section */
+.profil-hubungi {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  padding: 0 1rem; /* responsif */
+}
+
+.hubungi-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.hubungi-subtitle {
+  font-size: 1rem;
+  color: #5a6a7a;
+  margin-bottom: 2rem;
+}
+
+.hubungi-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.hubungi-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  width: 32%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: all 0.3s ease;  /* animasi */
+  display: flex;
+  flex-direction: column;
+}
+
+.hubungi-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+}
+.hubungi-icon-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1f0ff; /* biru muda */
+  border-radius: 40%; /* oval horizontal */
+  width: 60px;   /* lebar wrapper */
+  height: 60px;  /* tinggi wrapper */
+  margin: 0 auto 1rem auto;
+}
+
+.hubungi-icon-wrapper svg {
+  color: #1450B0;
+  width: 40px;    
+  height: 40px;
+}
+
+.hubungi-card h3 {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hubungi-card p {
+  font-size: 0.95rem;
+  color: #5a6a7a;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 1024px) {
+  .visimisi-card {
+    width: 100%;
+  }
+}
+@media (max-width: 768px){
+      .hubungi-boxes {
+    flex-direction: column; /* tumpuk vertical */
+    align-items: center;    /* center horizontal */
+  }
+  .visimisi-header, .hubungi-header {
+  font-size: 1.6rem;
+}
+
+  .visimisi-subtitle, .hubungi-subtitle {
+  font-size: 1rem;
+}
+
+  .hubungi-card {
+    width: 90%;       /* agar ada jarak kiri-kanan */
+    margin-bottom: 1.5rem; /* jarak antar card vertikal */
+  }
+}
+
+@media (max-width: 480px) {
+  .profil-title {
+    font-size: 1.4rem;
+  }
+  .profil-subtitle {
+    font-size: 0.9rem;
+  }
+  .profil-image {
+    max-width: 75%;
+  }
+}
