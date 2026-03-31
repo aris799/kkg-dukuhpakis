@@ -34,7 +34,7 @@ const Profil = () => {
       {/* Gambar Peresmian */}
       <div className="profil-image-wrapper">
         <img
-          src="/peresmiankkg.jpeg"
+          src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918738/peresmiankkg_wgbnho.jpg"
           alt="Peresmian KKG"
           className="profil-image"
         />
