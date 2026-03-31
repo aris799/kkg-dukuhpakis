@@ -82,7 +82,7 @@ function Home() {
         <Container>
           <div className="hero__content">
             <img 
-              src="/logokkgdukuhpakis.png" 
+              src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918543/logokkgdukuhpakis_by0jxy.png" 
               alt="KKG Dukuh Pakis" 
               className="hero__logo"
             />
@@ -237,11 +237,11 @@ function Home() {
 {/* Logos Section */}
 <section className="kkg-logos">
   <div className="kkg-logos__container">
-    <img src="/logopemkotsby.png" alt="Logo Pemkot Surabaya" className="kkg-logo" />
-    <img src="/logoberakhlak.png" alt="Logo Berakhlak" className="kkg-logo" />
-    <img src="/logokkgdukuhpakis.png" alt="Logo KKG Dukuh Pakis" className="kkg-logo" />
-    <img src="/logobanggamelayanibangsa.png" alt="Logo Bangga Melayani Bangsa" className="kkg-logo" />
-    <img src="/logotutwurihandayani.png" alt="Logo Tut Wuri Handayani" className="kkg-logo" />
+    <img src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918588/logopemkotsby_t3se3z.png" alt="Logo Pemkot Surabaya" className="kkg-logo" />
+    <img src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918622/logoberakhlak_wih1ca.png" alt="Logo Berakhlak" className="kkg-logo" />
+    <img src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918543/logokkgdukuhpakis_by0jxy.png" alt="Logo KKG Dukuh Pakis" className="kkg-logo" />
+    <img src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918621/logobanggamelayanibangsa_keghxz.png" alt="Logo Bangga Melayani Bangsa" className="kkg-logo" />
+    <img src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918609/logotutwurihandayani_uskkyz.png" alt="Logo Tut Wuri Handayani" className="kkg-logo" />
   </div>
 </section>
 {/* Footer */}
