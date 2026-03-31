@@ -31,7 +31,7 @@ function Header() {
         {/* Logo & Title */}
         <div className="header__brand">
           <img 
-            src="/src/assets/logokkgdukuhpakis.png" 
+            src="https://res.cloudinary.com/diogvlobw/image/upload/v1774918543/logokkgdukuhpakis_by0jxy.png" 
             alt="KKG Dukuh Pakis Logo" 
             className="brand__logo"
           />
