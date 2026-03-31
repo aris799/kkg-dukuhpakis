@@ -34,7 +34,7 @@ const Profil = () => {
       {/* Gambar Peresmian */}
       <div className="profil-image-wrapper">
         <img
-          src="/src/assets/peresmiankkg.jpeg"
+          src="/peresmiankkg.jpeg"
           alt="Peresmian KKG"
           className="profil-image"
         />
