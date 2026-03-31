@@ -82,7 +82,7 @@ function Home() {
         <Container>
           <div className="hero__content">
             <img 
-              src="/src/assets/logokkgdukuhpakis.png" 
+              src="/logokkgdukuhpakis.png" 
               alt="KKG Dukuh Pakis" 
               className="hero__logo"
             />
@@ -237,11 +237,11 @@ function Home() {
 {/* Logos Section */}
 <section className="kkg-logos">
   <div className="kkg-logos__container">
-    <img src="/src/assets/logopemkotsby.png" alt="Logo Pemkot Surabaya" className="kkg-logo" />
-    <img src="/src/assets/logoberakhlak.png" alt="Logo Berakhlak" className="kkg-logo" />
-    <img src="/src/assets/logokkgdukuhpakis.png" alt="Logo KKG Dukuh Pakis" className="kkg-logo" />
-    <img src="/src/assets/logobanggamelayanibangsa.png" alt="Logo Bangga Melayani Bangsa" className="kkg-logo" />
-    <img src="/src/assets/logotutwurihandayani.png" alt="Logo Tut Wuri Handayani" className="kkg-logo" />
+    <img src="/logopemkotsby.png" alt="Logo Pemkot Surabaya" className="kkg-logo" />
+    <img src="/logoberakhlak.png" alt="Logo Berakhlak" className="kkg-logo" />
+    <img src="/logokkgdukuhpakis.png" alt="Logo KKG Dukuh Pakis" className="kkg-logo" />
+    <img src="/logobanggamelayanibangsa.png" alt="Logo Bangga Melayani Bangsa" className="kkg-logo" />
+    <img src="/logotutwurihandayani.png" alt="Logo Tut Wuri Handayani" className="kkg-logo" />
   </div>
 </section>
 {/* Footer */}
